@@ -1,11 +1,36 @@
+  /*    RECORDAR LA ETIQUETA SPAN QUE NO TIENE CARGA SEMÁNTICA Y PUEDE SERVIR A LA HORA DE DESTACAR PARTES DEL TEXTO
+*/
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-family: "Handlee";
+    font-size: large;
+}
+
+h2, h3, h4, p{
+    font-family: Helvetica, sans-serif;
+    font-size: small;
+}
+
 .barralinks{
     background-color: navy;
     color: white;
     height: 50px;
     display: flex;
-    gap: 50px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    
+}
+
+.orange{
+    color: orange;
+}
+
+.white{
+    color: white;
 }
 
 .navlinks{
@@ -13,13 +38,12 @@
     color: darkgrey;
     height: 50px;
     display: flex;
-    gap: 50px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .logo{
-    height: 50px;
+    height: 20px;
 }
 
 .secprincipal{
@@ -29,6 +53,13 @@
 
 .servicios{
 height: 300px;
+}
+
+.espacioarticulos{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
 }
 
 .about{
@@ -42,4 +73,12 @@ height: 300px;
     display: flex;
     gap: 10px;
     align-items: center;
+}
+
+.imgArt{
+    width: 200px;
+}
+
+.formatArt{
+width: 200px;
 }
