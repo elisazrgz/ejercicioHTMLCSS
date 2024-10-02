@@ -1,0 +1,45 @@
+.barralinks{
+    background-color: navy;
+    color: white;
+    height: 50px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navlinks{
+    background-color: white;
+    color: darkgrey;
+    height: 50px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    height: 50px;
+}
+
+.secprincipal{
+    background-image: url(./images/fondo.jpg);
+    height: 500px;
+}
+
+.servicios{
+height: 300px;
+}
+
+.about{
+    height: 400px;
+}
+
+.barrafooter{
+    background-color: navy;
+    color: white;
+    height: 50px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
