@@ -3,124 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamburguesería Rovers</title>
+    <title>Ejercicio HTML+CSS</title>
     <!-- CÓDIGO FUENTE "HANDLEE" -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
-    <!-- CÓDIGO FUENTE "INHERIT"-->
-
+    <!-- CÓDIGO FUENTE "MONTSERRAT"-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- HOJAS ESTILO + FONTAWESOME -->
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="./styles.css" />
 </head>
+
 <body>
+
     <header>
-       
-        <section class="barralinks">
-            <div>
+
+            <div class="contAzul">
+            
+            <ul class="barraLinks">
+            
+                <li class="flex">
                 <i class="fas orange fa-envelope"></i>
-                <h2>rover@gmail.com</h2>
-            </div>
-            <div>
+                <a href="#"><h2>rover@gmail.com</h2></a>
+                </li>
+
+                <li class="flex">
                 <i class="fas orange fa-phone"></i>
-                <h2>91 555 66 77</h2>
-            </div>
-            <div>
+                <a href="#"><h2>91 555 66 77</h2></a>
+                </li>
+
+                <li class="flex">
                 <i class="fas orange fa-cart-shopping"></i>
-                <h2>Carrito Compra</h2>
-            </div>
-            <div>
+                <a href="#"><h2>Carrito Compra</h2></a>
+                </li>
+
+                <li class="flex">
                 <i class="fas orange fa-circle-user"></i>
-                <h2>Usuario</h2>
-            </div>
-        </section>
+                <a href="#"><h2>Usuario</h2></a>
+                </li>
+            
+            </ul>
+
+        </div>
         
-        <nav class="navlinks">
-            <div >
-                <img src="./images/logo.jpg" class="logo" />
-            </div>
-            <div>
-                <h2>Inicio</h2>
-            </div>
-            <div>
-                <h2>Menu</h2>
-            </div>
-            <div>
-                <h2>Blog</h2>
-            </div>
-            <div>
-                <h2>Equipo</h2>
-            </div>
-        </nav>
+           <ul class="navLinks">
+            
+            <li class="justificarIzquierda">
+                <a href="#"><img src="./images/logo.jpg" class="logo" /></a>
+            </li>
+
+            <div class="justificarDerecha">
+            <li>
+                <h2><a href="#">Inicio</a></h2>
+            </li>
+            <li>
+                <h2><a href="#">Menu</a></h2>
+            </li>
+            <li>
+                <h2><a href="#">Blog</a></h2>
+            </li>
+            <li>
+                <h2><a href="#">Equipo</a></h2>
+            </li>
+            
+            </ul>
+        
+        </div>
+
+            
     
     </header>
     
     <main>
         
-        <section class="secprincipal">
-            <h1>Las mejores hamburguesas del mundo</h1>
-            <h2>Bienvenidos a nuestra hamburguesería</h2>
-            <h2>Come a partir de 15€</h2>
-            <h2>Nuestra carta</h2>
+        <section class="principal">
+
+            <article class="barraCentral">
             
-            <div class="iconosredes">
-                <i class="white fa-brands fa-facebook"></i>
-                <i class="white fa-brands fa-twitter"></i>
-                <i class="white fa-brands fa-instagram"></i>
+            <h1 class="">Las mejores hamburguesas del mundo</h1>
+            <h2 class=""><span class="orange">Bienvenidos a nuestra hamburguesería</span></h2>
+            <h2 class="">Come a partir de 15€</h2>
+            <h2 class="leerMas"><a href="#">Nuestra carta →</a></h2>
+            
+            <div>
+                <a href="#"><i class="white fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="white fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="white fa-brands fa-instagram"></i></a>
             </div>
+
+            </article>
+
         </section>
         
         <section class="servicios">
-            <div>
-            <h1> Our services</h1>
-            <i class="fas orange fa-horizontal-rule"></i>
-            </div>
-            <div class="espacioarticulos">
-            <article class="formatArt">
-            <i class="orange fas fa-gears"></i>
-            <h2>1. Carne 100% natural</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus molestiae, harum eum dolore sit quasi ipsa quas, illo atque assumenda doloremque! Blanditiis laboriosam voluptas, facilis amet quos culpa voluptate ullam!</p>
-            <h3>Leer más →</h3>
+
+            <h1 class="titulosSection">Our <span class="orange">services</span></h1>
+
+            <div class="containerArt">
+
+            <article>
+                 <i class="orange fas fa-gears"></i>
+                 <h2>1. Carne 100% natural</h2>
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus molestiae, harum eum dolore sit quasi ipsa quas, illo atque assumenda doloremque! Blanditiis laboriosam voluptas, facilis amet quos culpa voluptate ullam!</p>
+                 <h3><a href="#"><span class="orange">Leer más →</span></a></h3>
             </article>
-            <article class="formatArt">
-                <i class="orange fas fa-truck"></i>
-                <h2>2. Cocina moderna</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus molestiae, harum eum dolore sit quasi ipsa quas, illo atque assumenda doloremque! Blanditiis laboriosam voluptas, facilis amet quos culpa voluptate ullam!</p>
-                <h3>Leer más →</h3>
+
+            <article>
+                 <i class="orange fas fa-truck"></i>
+                 <h2>2. Cocina moderna</h2>
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus molestiae, harum eum dolore sit quasi ipsa quas, illo atque assumenda doloremque! Blanditiis laboriosam voluptas, facilis amet quos culpa voluptate ullam!</p>
+                 <h3><a href="#"><span class="orange">Leer más →</span></a></h3>
             </article>
-            <article class="formatArt">
-                <i class="orange fas fa-heart"></i>
-                <h2>3. Servicio impecable</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus molestiae, harum eum dolore sit quasi ipsa quas, illo atque assumenda doloremque! Blanditiis laboriosam voluptas, facilis amet quos culpa voluptate ullam!</p>
-                <h3>Leer más →</h3>
+            
+            <article>
+                 <i class="orange fas fa-heart"></i>
+                 <h2>3. Servicio impecable</h2>
+                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus molestiae, harum eum dolore sit quasi ipsa quas, illo atque assumenda doloremque! Blanditiis laboriosam voluptas, facilis amet quos culpa voluptate ullam!</p>
+                 <h3><a href="#"><span class="orange">Leer más →</span></a></h3>
             </article>
-        </div>
+
+             </div>
+
         </section>
         
         <section class="about">
-            <div>
-            <h1>About us</h1>
-            <i class="fas orange fa-horizontal-rule"></i>
-            </div>
-            <div class="espacioarticulos"> 
+            
+            <h1 class="titulosSection">About <span class="orange">us</span></h1>
+            
+            <div class="containerArt"> 
+
                 <img src="./images/about-main.jpg" class="imgArt" />
-                <article class="formatArt">
+
+                <article>
                     <h2>The History</h2>
-                    <h3>The History</h3>
+                    <h3><span class="orange">Our restaurant</span></h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus molestiae, harum eum dolore sit quasi ipsa quas, illo atque assumenda doloremque! Blanditiis laboriosam voluptas, facilis amet quos culpa voluptate ullam!</p>
-                    <h4>Leer más →</h4>
+                    <h4 class="leerMas"><a href="#">Leer más →</a></h4>
                 </article>
+
             </div>
+
         </section>
     
     </main>
 
-    <footer class="barrafooter">
-    <h2>Copyright©2020</h2>
-    <h2>Aviso legal</h2>
-    <h2>Cookies</h2>
+    <div class="button">
+        <a href="#">
+        <i class="fas fa-caret-up"></i>
+        </a>
+    </div>
+
+    <footer class="barraFooter">
+
+    <div class="footerLinks">
+    
+    <h2><a href="#">Copyright©2020</a></h2>
+    <h2><a href="#">Aviso legal</a></h2>
+    <h2><a href="#">Cookies</a></h2>
+    
+    </div>
+    
     </footer>
 </body>
 </html>

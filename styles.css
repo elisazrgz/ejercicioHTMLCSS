@@ -1,28 +1,52 @@
-  /*    RECORDAR LA ETIQUETA SPAN QUE NO TIENE CARGA SEMÁNTICA Y PUEDE SERVIR A LA HORA DE DESTACAR PARTES DEL TEXTO
+  /*    
+  PENDIENTE:
+  - revisar inspector pagina real (columna central etiqueta container)
+  - usar inspector para marcar y desmarcar cosas y no tener que estar escribiendo y borrando todo el rato en el doc
+
+.boton:hover {
+    background-color: transparent;
+    border: solid orangered;
+    cursor: pointer;
+
+
+  RECORDAR LA ETIQUETA SPAN QUE NO TIENE CARGA SEMÁNTICA Y PUEDE SERVIR A LA HORA DE DESTACAR PARTES DEL TEXTO
 */
 
 a{
     text-decoration: none;
+    text-decoration-line: none;
+    color: inherit;
 }
 
 h1{
     font-family: "Handlee";
-    font-size: large;
+    font-size: x-large;
+    height: 30px;
 }
 
 h2, h3, h4, p{
-    font-family: Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: small;
+    height: 30px;
 }
 
-.barralinks{
+.contAzul{
     background-color: navy;
     color: white;
     height: 50px;
+    align-content: center;
+}
+
+.barraLinks{
+    margin-left: 20%;
+    margin-right: 20%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    
+}
+
+.flex{
+    display: flex;
+    gap: 10px;
 }
 
 .orange{
@@ -33,52 +57,146 @@ h2, h3, h4, p{
     color: white;
 }
 
-.navlinks{
+.navLinks{
     background-color: white;
     color: darkgrey;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.justificarIzquierda{
+    display: flex;
+    align-items: left;
+}
+
+.justificarDerecha{
+    display: flex;
+    gap: 20px;
+    align-items: right;
 }
 
 .logo{
     height: 20px;
 }
 
-.secprincipal{
-    background-image: url(./images/fondo.jpg);
+.principal{
     height: 500px;
+    background-image: url(./images/fondo.jpg);
+    color: white;
+    display: flex;
+    align-items: center;
 }
 
+.barraCentral{
+    margin-left: 20%;
+    margin-right: 20%;    
+}
+
+.leerMas{
+    background-color: orange;
+    width: fit-content;
+}
+
+.fa-brands {
+    font-size: x-large;
+    width: 40px;
+}
+
+.fa-gears{
+    font-size: x-large;
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+}
+
+.fa-truck{
+    font-size: x-large;
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+}
+
+.fa-heart{
+    font-size: x-large;
+    width: 30px;
+    height: 30px;
+    border: 1px solid;
+}
+
+/*
+.espaciado{
+    height: 30px;
+}
+*/
 .servicios{
-height: 300px;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 300px;
 }
 
-.espacioarticulos{
+.titulosSection{
+    display: flex;
+    justify-content: center;
+}
+
+.containerArt{
     display: flex;
     gap: 10px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .about{
     height: 400px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
-.barrafooter{
+.button{
+    background-color: orange;
+    font-size: 50px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 10px;
+    bottom: 60px;
+}
+
+.fa-caret-up{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.barraFooter{
     background-color: navy;
     color: white;
     height: 50px;
-    display: flex;
+    width: 100%;
+    position: fixed;
     gap: 10px;
-    align-items: center;
+    bottom: 0px;
+}
+
+.footerLinks{
+    display: flex;
+    align-items: left;
+    gap: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .imgArt{
-    width: 200px;
+    width: 50%;
 }
 
-.formatArt{
-width: 200px;
-}
+
+
+
+/* MEDIA QUERIES RESPONSIVE */
+
