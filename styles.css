@@ -1,15 +1,13 @@
   /*    
   PENDIENTE:
-  - revisar inspector pagina real (columna central etiqueta container)
-  - usar inspector para marcar y desmarcar cosas y no tener que estar escribiendo y borrando todo el rato en el doc
-
-.boton:hover {
-    background-color: transparent;
-    border: solid orangered;
-    cursor: pointer;
+  - alinear iconos redes
+  - alinear links barras
+  - alinear contenido artículos (ponerle height auto y añadir margins?)
 
 
-  RECORDAR LA ETIQUETA SPAN QUE NO TIENE CARGA SEMÁNTICA Y PUEDE SERVIR A LA HORA DE DESTACAR PARTES DEL TEXTO
+  ! revisar inspector pagina real (columna central etiqueta container)
+  ! usar inspector para marcar y desmarcar cosas y no tener que estar escribiendo y borrando todo el rato en el doc
+
 */
 
 a{
@@ -31,10 +29,15 @@ h2, h3, h4, p{
 }
 
 .contAzul{
-    background-color: navy;
+    background-color: #21242e;
     color: white;
     height: 50px;
-    align-content: center;
+    align-content:space-evenly;
+    padding-top: 10px;
+}
+
+strong{
+    font-weight: bold;
 }
 
 .barraLinks{
@@ -50,7 +53,7 @@ h2, h3, h4, p{
 }
 
 .orange{
-    color: orange;
+    color: #fa573a;
 }
 
 .white{
@@ -60,12 +63,14 @@ h2, h3, h4, p{
 .navLinks{
     background-color: white;
     color: darkgrey;
-    height: 50px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-left: 20%;
     margin-right: 20%;
+    padding-top: 15px;
+
 }
 
 .justificarIzquierda{
@@ -79,13 +84,24 @@ h2, h3, h4, p{
     align-items: right;
 }
 
+/*
+.justificarDerecha:hover{
+    color: #fa573a;
+    cursor: pointer;
+}
+    */
+
 .logo{
-    height: 20px;
+    height: 40%;
+    padding-top: 15px;
 }
 
 .principal{
     height: 500px;
     background-image: url(./images/fondo.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #999;
     color: white;
     display: flex;
     align-items: center;
@@ -97,9 +113,17 @@ h2, h3, h4, p{
 }
 
 .leerMas{
-    background-color: orange;
+    background-color: #fa573a;
     width: fit-content;
+    align-content: center;
 }
+
+.leerMas:hover {
+    background-color: transparent;
+    border: solid #fa573a;
+    color: #fa573a;
+    cursor: pointer;
+} 
 
 .fa-brands {
     font-size: x-large;
@@ -127,20 +151,17 @@ h2, h3, h4, p{
     border: 1px solid;
 }
 
-/*
-.espaciado{
-    height: 30px;
-}
-*/
 .servicios{
     margin-left: 20%;
     margin-right: 20%;
-    height: 300px;
+    height: 200px;
 }
 
 .titulosSection{
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 20%;
 }
 
 .containerArt{
@@ -148,7 +169,9 @@ h2, h3, h4, p{
     gap: 10px;
     align-items: center;
     justify-content: space-between;
+    height: 80%;
 }
+
 
 .about{
     height: 400px;
@@ -157,7 +180,7 @@ h2, h3, h4, p{
 }
 
 .button{
-    background-color: orange;
+    background-color: #fa573a;
     font-size: 50px;
     color: white;
     width: 50px;
@@ -174,13 +197,15 @@ justify-content: center;
 }
 
 .barraFooter{
-    background-color: navy;
+    background-color: #21242e;
+    font-size: x-large;
     color: white;
     height: 50px;
     width: 100%;
     position: fixed;
     gap: 10px;
     bottom: 0px;
+    align-content: space-evenly;
 }
 
 .footerLinks{
@@ -189,12 +214,20 @@ justify-content: center;
     gap: 10px;
     margin-left: 20%;
     margin-right: 20%;
+    padding-top: 10px;
 }
 
 .imgArt{
     width: 50%;
+    border: solid #fa573a;
+    
 }
 
+.imgArt:hover{
+    border: solid #fa573a;
+    cursor: pointer;
+    transform: rotateZ(10deg);
+}
 
 
 
