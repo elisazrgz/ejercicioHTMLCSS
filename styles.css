@@ -1,3 +1,4 @@
+/* ESTILOS CSS DESKTOP */
 
 a{
     text-decoration: none;
@@ -14,7 +15,6 @@ h1{
 h2, h3, h4, p{
     font-family: "Montserrat", sans-serif;
     font-size: small;
-    /* height: 30px; */
 }
 
 .contAzul{
@@ -225,14 +225,70 @@ justify-content: center;
 
 
 
-/* MEDIA QUERIES RESPONSIVE 
+/* MEDIA QUERIES MÓVIL (BOOTSTRAP "XS" <576px) */
 
-@media (min-width: 435px){
- p{
-   font-size: 25px;
-   }
+@media screen and (max-width: 576px) {
+ 
+img{
+   width: 100%;
+   height: auto;
+   display: block;
 }
 
+.noDisplay{
+display:none;
+}
 
-*/
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.logo{
+    width: 50%;
+    justify-content: center;
+}
+
+.justificarDerecha{
+display: none;
+}
+
+/*
+.fa-bars{
+    font-size: x-large;
+}
+    */
+
+.principal{
+    height: auto;
+}
+
+.barraCentral{
+    margin-inline: 10%;
+    margin-block: 10%;
+}
+
+.servicios{
+    height: auto;
+    margin-inline: 10%;
+    margin-block: 10%;
+}
+
+.about{
+    height: auto;
+    margin-inline: 10%;
+    margin-block: 10%;
+}
+
+.containerArt {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+ }
+
+
+
 
