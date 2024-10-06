@@ -70,12 +70,6 @@ strong{
     align-items: right;
 }
 
-/*
-.justificarDerecha:hover{
-    color: #fa573a;
-    cursor: pointer;
-}
-    */
 
 .logo{
     height: 30%;
@@ -223,7 +217,9 @@ justify-content: center;
     transform: rotateY(10deg)
 }
 
-
+.hamburguesa{
+    display: none;
+}
 
 /* MEDIA QUERIES MÓVIL (BOOTSTRAP "XS" <576px) */
 
@@ -244,20 +240,34 @@ main{
     flex-direction: column;
 }
 
+.navLinks{
+    height: auto;
+    display: block;
+}
+
 .logo{
     width: 50%;
     justify-content: center;
 }
 
-.justificarDerecha{
-display: none;
+.menuEncima{
+    display: flex;
 }
 
-/*
-.fa-bars{
-    font-size: x-large;
+/* PENDIENTE DE VER POR QUÉ NO FUNCIONA LA HAMBURGUESA */
+
+.hamburguesa{
+    display: auto;
+    background-image: url(./images/menu_hamburguesa.svg);
+    background-size: cover;
+    color: darkgray;
 }
-    */
+
+.justificarDerecha{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 
 .principal{
     height: auto;
