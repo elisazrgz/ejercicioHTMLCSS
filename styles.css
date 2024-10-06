@@ -1,14 +1,3 @@
-  /*    
-  PENDIENTE:
-  - alinear iconos redes
-  - alinear links barras
-  - alinear contenido artículos (ponerle height auto y añadir margins?)
-
-
-  ! revisar inspector pagina real (columna central etiqueta container)
-  ! usar inspector para marcar y desmarcar cosas y no tener que estar escribiendo y borrando todo el rato en el doc
-
-*/
 
 a{
     text-decoration: none;
@@ -33,7 +22,6 @@ h2, h3, h4, p{
     color: white;
     height: 50px;
     align-content:space-evenly;
-    padding-top: 10px;
 }
 
 strong{
@@ -63,14 +51,12 @@ strong{
 .navLinks{
     background-color: white;
     color: darkgrey;
-    height: 60px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-left: 20%;
     margin-right: 20%;
-    padding-top: 15px;
-
 }
 
 .justificarIzquierda{
@@ -92,8 +78,8 @@ strong{
     */
 
 .logo{
-    height: 40%;
-    padding-top: 15px;
+    height: 30%;
+    padding-top: 30px;
 }
 
 .principal{
@@ -219,7 +205,6 @@ justify-content: center;
     gap: 10px;
     margin-left: 20%;
     margin-right: 20%;
-    padding-top: 10px;
 }
 
 .imgArt{
