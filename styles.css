@@ -25,7 +25,7 @@ h1{
 h2, h3, h4, p{
     font-family: "Montserrat", sans-serif;
     font-size: small;
-    height: 30px;
+    /* height: 30px; */
 }
 
 .contAzul{
@@ -115,7 +115,7 @@ strong{
 .leerMas{
     background-color: #fa573a;
     width: fit-content;
-    align-content: center;
+    padding: 10px;
 }
 
 .leerMas:hover {
@@ -172,6 +172,11 @@ strong{
     height: 80%;
 }
 
+.align{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 .about{
     height: 400px;
@@ -218,18 +223,31 @@ justify-content: center;
 }
 
 .imgArt{
-    width: 50%;
-    border: solid #fa573a;
-    
+   width: 50%;
 }
 
-.imgArt:hover{
-    border: solid #fa573a;
+.marco{
+   border: solid #fa573a 3px;
+   transform: rotateZ(10deg);
+   transition: 1s;
+}
+
+.marco:hover{
+    border: solid #fa573a 3px;
     cursor: pointer;
-    transform: rotateZ(10deg);
+    transform: rotateY(10deg)
 }
 
 
 
-/* MEDIA QUERIES RESPONSIVE */
+/* MEDIA QUERIES RESPONSIVE 
+
+@media (min-width: 435px){
+ p{
+   font-size: 25px;
+   }
+}
+
+
+*/
 
