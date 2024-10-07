@@ -1,4 +1,4 @@
-/* ESTILOS CSS DESKTOP */
+/* ESTILOS CSS VERSIÓN DESKTOP */
 
 html{
     font-size: 100%;
@@ -67,15 +67,25 @@ strong{
     align-items: left;
 }
 
+
+.logo{
+    height: 30%;
+    padding-top: 30px;
+}
+
 .enlacesMenu{
     display: flex;
     gap: 20px;
     align-items: right;
 }
 
-.logo{
-    height: 30%;
-    padding-top: 30px;
+.enlaceResaltado{
+    color: inherit;
+}
+
+.enlaceResaltado:hover{
+    cursor: pointer;
+    color: #fa573a;
 }
 
 .contPrincipal{
@@ -151,7 +161,7 @@ strong{
 
 .contArticulos{
     display: flex;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
     justify-content: space-between;
     height: 80%;
@@ -161,6 +171,11 @@ strong{
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+.bordeArticulos{
+    border-left: solid darkgrey;
+    padding-left: 20px;
 }
 
 .contAbout{
@@ -179,6 +194,7 @@ strong{
     position: fixed;
     right: 10px;
     bottom: 60px;
+    border-radius: 5px;
 }
 
 .fa-caret-up{
@@ -207,7 +223,8 @@ strong{
 }
 
 .imgArt{
-   width: 50%;
+   width: 100%;
+   transform: rotateZ(-10deg);
 }
 
 .marco{
@@ -219,7 +236,7 @@ strong{
 .marco:hover{
     border: solid #fa573a 3px;
     cursor: pointer;
-    transform: rotateY(10deg)
+    transform: rotateZ(-10deg);
 }
 
 .hamburguesa{
@@ -258,8 +275,6 @@ main{
 .contIconos{
     display: flex;
 }
-
-/* PENDIENTE DE VER POR QUÉ NO FUNCIONA LA HAMBURGUESA */
 
 .enlacesParejas{
     margin-inline: 10%;
@@ -311,6 +326,12 @@ main{
     height: auto;
     margin-inline: 10%;
     margin-block: 10%;
+}
+
+.bordeArticulos{
+    border-left: none;
+    border-bottom: solid darkgrey;
+    padding-bottom: 20px;
 }
 
 .contAbout{
